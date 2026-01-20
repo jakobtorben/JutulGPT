@@ -16,22 +16,24 @@ JutulGPT currently supports these providers:
 When running via the CLI, you can select a preset at startup:
 
 ```bash
-python examples/agent.py --model gpt-5.1-mini-reasoning
-python examples/autonomous_agent.py --model gpt-5.1-reasoning
+python examples/agent.py --model gpt-5.2-reasoning
+python examples/autonomous_agent.py --model gpt-5.2-reasoning
 python examples/autonomous_agent.py --model qwen3:14b-thinking
 ```
 
 Default:
 
-- `--model gpt-5.1-mini-reasoning` (alias for `gpt-5-mini-reasoning`)
+- `--model gpt-5.2-reasoning` (alias for `gpt-5.2-reasoning`)
 
 | Preset name (`configuration.py`) | Provider | Model | Context window | Reasoning | Verbosity | Reasoning effort | Reasoning summary |
 |---|---|---:|---:|---|---|---|---|
 | `OPENAI_GPT_4_1` | OpenAI | `gpt-4.1` | 200k | No | `medium` | `medium` | — |
-| `OPENAI_GPT_5_1` | OpenAI | `gpt-5.1` | 200k | No | `low` | `medium` | — |
-| `OPENAI_GPT_5_1_REASONING` | OpenAI | `gpt-5.1` | 200k | Yes | `low` | `medium` | `auto` |
 | `OPENAI_GPT_5_MINI` | OpenAI | `gpt-5-mini` | 200k | No | `low` | `medium` | — |
 | `OPENAI_GPT_5_MINI_REASONING` | OpenAI | `gpt-5-mini` | 200k | Yes | `low` | `medium` | `auto` |
+| `OPENAI_GPT_5_1` | OpenAI | `gpt-5.1` | 200k | No | `low` | `medium` | — |
+| `OPENAI_GPT_5_1_REASONING` | OpenAI | `gpt-5.1` | 200k | Yes | `low` | `medium` | `auto` |
+| `OPENAI_GPT_5_2` | OpenAI | `gpt-5.2` | 200k | No | `low` | `medium` | — |
+| `OPENAI_GPT_5_2_REASONING` | OpenAI | `gpt-5.2` | 200k | Yes | `low` | `medium` | `auto` |
 | `OLLAMA_QWEN3_14B_THINKING` | Ollama | `qwen3:14b` | 32k | Yes | — | — | — |
 | `OLLAMA_QWEN3_14B` | Ollama | `qwen3:14b` | 32k | No | — | — | — |
 
